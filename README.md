@@ -1,4 +1,4 @@
-Actividad Formativa 4 - Creando jerarquías de clases con herencia simple
+Actividad Formativa 5 - Aplicando polimorfismo y colecciones genéricas
 
 👤 Autor del proyecto
 
@@ -16,7 +16,25 @@ Sede: Sede Online
 
 📘 Descripción del proyecto
 
-Este proyecto, denominado LlanquihueTourApp, es una aplicación desarrollada en Java diseñada para modelar la operación de una agencia de turismo. En esta etapa, el sistema implementa una jerarquía de clases que permite representar diversos servicios turísticos mediante herencia simple. El sistema utiliza una clase base (ServicioTuristico) y subclases especializadas (RutaGastronomica, PaseoLacustre, ExcursionCultural), aplicando conceptos de sobreescritura de métodos y composición para mantener una estructura escalable y organizada.
+Este proyecto, denominado LlanquihueTourApp, es una aplicación desarrollada en Java diseñada para modelar la operación de una agencia de turismo. En esta etapa, el sistema ha evolucionado para implementar polimorfismo y el uso de colecciones genéricas (ArrayList), permitiendo gestionar y recorrer dinámicamente diversos tipos de servicios turísticos desde una colección única, aplicando la sobrescritura de métodos para diferenciar comportamientos.
+
+
+
+🧱 Jerarquía de clases
+
+ServicioTuristico (superclase): Define los atributos comunes como nombre y duración.
+
+
+
+RutaGastronomica (subclase): Extiende la superclase y añade el atributo: número de paradas.
+
+
+
+PaseoLacustre (subclase): Extiende la superclase y añade el atributo: tipo de embarcación.
+
+
+
+ExcursionCultural (subclase): Extiende la superclase y añade el atributo: lugar histórico.
 
 
 
@@ -26,23 +44,21 @@ Este proyecto, denominado LlanquihueTourApp, es una aplicación desarrollada en 
 
 
 
-├── data/        # Contiene la clase GestorServicios, encargada de crear instancias de prueba de los servicios.
+├── data/        # Contiene la clase GestorServicios, que gestiona la colección polimórfica de servicios turísticos.
 
 
 
-├── model/       # Contiene la jerarquía de clases: ServicioTuristico (superclase), RutaGastronomica, PaseoLacustre y ExcursionCultural.
+├── model/       # Contiene la jerarquía de clases: ServicioTuristico, RutaGastronomica, PaseoLacustre y ExcursionCultural con el método mostrarInformacion() sobrescrito.
 
 
 
-└── ui/          # Contiene la clase Main, el punto de entrada que ejecuta el sistema y muestra los resultados por consola.
+└── ui/          # Contiene la clase Main, el punto de entrada que recorre y muestra los resultados por consola.
 
 
 
 ⚙️ Cómo ejecutar el proyecto
 
-
-
-Clona el repositorio: \[https://github.com/egonzalezubilla/LlanquihueTourApp.git](https://github.com/egonzalezubilla/LlanquihueTourApp.git)
+Clona el repositorio: https://github.com/egonzalezubilla/LlanquihueTourApp.git
 
 
 
@@ -54,11 +70,11 @@ Localiza y ejecuta el archivo Main.java dentro del paquete ui.
 
 
 
-Repositorio GitHub: \[https://github.com/egonzalezubilla/LlanquihueTourApp.git](https://github.com/egonzalezubilla/LlanquihueTourApp.git)
+Repositorio GitHub: https://github.com/egonzalezubilla/LlanquihueTourApp.git
 
 
 
-Fecha de entrega: 29/06/2026
+Fecha de entrega: 02/07/2026
 
 
 

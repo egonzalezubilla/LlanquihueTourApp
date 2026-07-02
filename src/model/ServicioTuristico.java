@@ -8,17 +8,14 @@ public class ServicioTuristico {
     public ServicioTuristico() {
     }
 
-    @Override
-    public String toString() {
-        return "\n---- INFORMACION DE SERVICIO TURISTICO ----\n"
-                + "Nombre Actividad   : " + nombre
-                + "\nDuracion           : " + duracionHoras + " Hr(s).";
-
-    }
-
     public ServicioTuristico(String nombre, int duracionHoras) {
         this.nombre = nombre;
         this.duracionHoras = duracionHoras;
+    }
+
+    public void mostrarInformacion() {
+        System.out.println("Nombre Actividad   : " + nombre + ".");
+        System.out.println("Duracion           : " + duracionHoras + " Hr(s).");
     }
 
     public String getNombre() {

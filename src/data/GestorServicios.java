@@ -1,30 +1,29 @@
 package data;
 
+import java.util.ArrayList;
 import model.ExcursionCultural;
 import model.PaseoLacustre;
 import model.RutaGastronomica;
+import model.ServicioTuristico;
 
 public class GestorServicios {
 
-    public static void mostrarServicios() {
+    public ArrayList<ServicioTuristico> obtenerServicios() {
 
-        RutaGastronomica r1 = new RutaGastronomica("Ruta del pinon", 4, 3);
-        RutaGastronomica r2 = new RutaGastronomica("Sabores del Sur", 3, 2);
+        ArrayList<ServicioTuristico> servicios = new ArrayList<>();
 
-        PaseoLacustre p1 = new PaseoLacustre("Lago Llanquihue", 1, "Catamaran");
-        PaseoLacustre p2 = new PaseoLacustre("Rio Pucon", 2, "Bote");
-
-        ExcursionCultural e1 = new ExcursionCultural("Buscando la Guerra de Arauco", 2, "Fuerte espanol");
-        ExcursionCultural e2 = new ExcursionCultural("Tour Historico Puerto Varas", 3, "Centro Ciudad");
-
-        System.out.println("---- MOSTRANDO LOS SERVICIOS DISPONIBLES ----\n");
-        System.out.println(r1);
-        System.out.println(r2);
-        System.out.println(p1);
-        System.out.println(p2);
-        System.out.println(e1);
-        System.out.println(e2);
-
+        servicios.add(new RutaGastronomica("Ruta del Vino", 4, 3));
+        servicios.add(new PaseoLacustre("Vista al Volcan", 2, "Catamaran"));
+        servicios.add(new ExcursionCultural("Museo Local", 3, "Centro Historico"));
+        servicios.add(new RutaGastronomica("Tour de Quesos", 5, 2));
+        servicios.add(new PaseoLacustre("Avistamiento de Aves", 3, "Bote a remo"));
+        servicios.add(new ServicioTuristico("Spa Llanquihue", 3));
+        servicios.add(new PaseoLacustre("Lago Llanquihue", 3, "Kayak"));
+        servicios.add(new RutaGastronomica("Sabores del Sur", 6, 4));
+        servicios.add(new PaseoLacustre("Travesia al atardecer", 2, "Lancha motorizada"));
+        servicios.add(new ExcursionCultural("Tour de artesanias", 4, "Barrio artesanal"));
+        servicios.add(new RutaGastronomica("Cata de cervezas", 3, 5));
+        return servicios;
     }
 
 }

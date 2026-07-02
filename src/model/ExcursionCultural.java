@@ -13,11 +13,10 @@ public class ExcursionCultural extends ServicioTuristico {
     }
 
     @Override
-    public String toString() {
-        super.toString();
-        return  "\n---- EXCURSION CULTURAL ----"
-                + super.toString()
-                + "\nLugar historico    : " + lugarHistorico;
+    public void mostrarInformacion() {
+        System.out.println("Tipo de Servicio: Excursion Cultural");
+        super.mostrarInformacion();
+        System.out.println("Lugar historico       : " + lugarHistorico + ".");
     }
 
     public String getLugarHistorico() {
