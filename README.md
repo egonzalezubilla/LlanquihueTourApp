@@ -1,6 +1,10 @@
-Actividad Formativa 5 - Aplicando polimorfismo y colecciones genéricas
+Evaluacion Sumativa 3 - Aplicando polimorfismo y colecciones genéricas
+
+
 
 👤 Autor del proyecto
+
+
 
 Nombre completo: Elías González Ubilla
 
@@ -16,49 +20,53 @@ Sede: Sede Online
 
 📘 Descripción del proyecto
 
-Este proyecto, denominado LlanquihueTourApp, es una aplicación desarrollada en Java diseñada para modelar la operación de una agencia de turismo. En esta etapa, el sistema ha evolucionado para implementar polimorfismo y el uso de colecciones genéricas (ArrayList), permitiendo gestionar y recorrer dinámicamente diversos tipos de servicios turísticos desde una colección única, aplicando la sobrescritura de métodos para diferenciar comportamientos.
+
+
+Este proyecto, denominado LlanquihueTourApp, es una aplicación desarrollada en Java diseñada para modelar la operación de una agencia de turismo. En esta etapa, el sistema ha evolucionado para implementar una interfaz gráfica (JFrame), polimorfismo y el uso de colecciones genéricas (ArrayList), permitiendo gestionar y registrar dinámicamente diversos tipos de personal y recursos de la agencia, aplicando la sobrescritura de métodos para diferenciar comportamientos.
 
 
 
 🧱 Jerarquía de clases
 
-ServicioTuristico (superclase): Define los atributos comunes como nombre y duración.
+
+
+Registrable (Interfaz): Define el contrato para el registro.
 
 
 
-RutaGastronomica (subclase): Extiende la superclase y añade el atributo: número de paradas.
+Persona (Superclase): Clase base para GuiaTuristico y ColaboradorExterno.
 
 
 
-PaseoLacustre (subclase): Extiende la superclase y añade el atributo: tipo de embarcación.
+RecursoAgencia (Superclase): Clase base para Vehiculo.
 
 
 
-ExcursionCultural (subclase): Extiende la superclase y añade el atributo: lugar histórico.
+GuiaTuristico, ColaboradorExterno, Vehiculo (Subclases): Implementan la interfaz Registrable y sobrescriben métodos para comportamientos específicos.
 
 
 
 🧱 Estructura del proyecto
 
+
+
 📁 src/
 
 
 
-├── data/        # Contiene la clase GestorServicios, que gestiona la colección polimórfica de servicios turísticos.
+├── data/        # Contiene la clase GestorEntidades, responsable de la lógica polimórfica y el almacenamiento en memoria de las colecciones.
 
 
 
-├── model/       # Contiene la jerarquía de clases: ServicioTuristico, RutaGastronomica, PaseoLacustre y ExcursionCultural con el método mostrarInformacion() sobrescrito.
+├── model/       # Contiene la jerarquía de clases: Persona, GuiaTuristico, ColaboradorExterno, RecursoAgencia, Vehiculo y la interfaz Registrable.
 
 
 
-└── ui/          # Contiene la clase Main, el punto de entrada que recorre y muestra los resultados por consola.
+└── ui/          # Contiene la clase Main, el punto de entrada principal que contiene el JFrame y la lógica de interacción con el usuario.
 
 
 
 ⚙️ Cómo ejecutar el proyecto
-
-Clona el repositorio: https://github.com/egonzalezubilla/LlanquihueTourApp.git
 
 
 
@@ -66,7 +74,11 @@ Abre el proyecto utilizando Apache NetBeans.
 
 
 
-Localiza y ejecuta el archivo Main.java dentro del paquete ui.
+Localiza el paquete ui.
+
+
+
+Haz clic derecho sobre la clase Main.java y selecciona "Run File" para iniciar la interfaz gráfica.
 
 
 
@@ -74,7 +86,7 @@ Repositorio GitHub: https://github.com/egonzalezubilla/LlanquihueTourApp.git
 
 
 
-Fecha de entrega: 02/07/2026
+Fecha de entrega: 13/07/2026
 
 
 
