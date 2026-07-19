@@ -1,0 +1,16 @@
+EMBARCACION;ETHL99;Lancha a motor;false;5
+VEHICULO;ETHL12;Toyota Hilux;true;15000
+VEHICULO;ETHL45;Mitsubishi L200;true;22000
+VEHICULO;ETHL09;Ford Ranger;false;45000
+VEHICULO;ETHL88;Nissan Navara;true;12500
+VEHICULO;ETHL33;Mazda BT-50;true;30000
+VEHICULO;ETHL57;Chevrolet Colorado;false;55000
+VEHICULO;ETHL21;Kia Mohave;true;18000
+VEHICULO;ETHL99;Hyundai Santa Fe;true;25000
+EMBARCACION;ETHL05;Bote Pescador;true;4
+EMBARCACION;ETHL11;Lancha Rapida;true;6
+EMBARCACION;ETHL77;Yate Pequeño;false;8
+EMBARCACION;ETHL24;Catamaran Lago;true;10
+EMBARCACION;ETHL66;Bote de Remo;true;2
+EMBARCACION;ETHL42;Lancha de Paseo;true;5
+EMBARCACION;ETHL01;Velero Menor;true;3

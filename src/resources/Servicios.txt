@@ -1,0 +1,17 @@
+EXCURSION;ST01;Subida al volcan;4;12
+EXCURSION;ST02;Caminata por Parque;1;10
+LACUSTRE;ST01;Crucero por Lago Llanquihue;4;Puerto Varas
+LACUSTRE;ST02;Paseo al Volcan Osorno;2;Ensenada
+LACUSTRE;ST03;Travesia al Rio Petrohue;3;Saltos del Petrohue
+LACUSTRE;ST04;Navegacion Isla Tenglo;4;Puerto Montt
+LACUSTRE;ST05;Tour Bahía de Castro;2;Castro
+EXCURSION;ST12;Trekking al Volcan Calbuco;4;15
+EXCURSION;ST15;Caminata Bosque de Alerces;3;8
+EXCURSION;ST22;Ruta Mirador el Osorno;2;12
+EXCURSION;ST28;Sendero Cascadas;4;5
+EXCURSION;ST33;Trekking Parque Alerce Andino;3;25
+GASTRONOMICO;ST45;Ruta del Cordero al Palo;4;3
+GASTRONOMICO;ST51;Tour Sabores de Chiloe;2;4
+GASTRONOMICO;ST66;Circuito de Reposteria Alemana;3;5
+GASTRONOMICO;ST72;Ruta de los Mariscos Frescos;4;3
+GASTRONOMICO;ST88;Degustacion de Quesos del Sur;2;4
