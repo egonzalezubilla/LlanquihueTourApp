@@ -1,10 +1,6 @@
-Evaluacion Sumativa 3 - Aplicando polimorfismo y colecciones genéricas
-
-
+Evaluación Final Transversal - LlanquihueTourApp
 
 👤 Autor del proyecto
-
-
 
 Nombre completo: Elías González Ubilla
 
@@ -20,73 +16,81 @@ Sede: Sede Online
 
 📘 Descripción del proyecto
 
-
-
-Este proyecto, denominado LlanquihueTourApp, es una aplicación desarrollada en Java diseñada para modelar la operación de una agencia de turismo. En esta etapa, el sistema ha evolucionado para implementar una interfaz gráfica (JFrame), polimorfismo y el uso de colecciones genéricas (ArrayList), permitiendo gestionar y registrar dinámicamente diversos tipos de personal y recursos de la agencia, aplicando la sobrescritura de métodos para diferenciar comportamientos.
-
-
-
-🧱 Jerarquía de clases
+LlanquihueTourApp es un sistema de gestión integral diseñado para optimizar las operaciones de una agencia de turismo. Esta aplicación permite centralizar la administración de la agencia mediante el almacenamiento y gestión eficiente de Personas (clientes, guías y colaboradores), Recursos (vehículos y embarcaciones) y Servicios turísticos (excursiones, paseos lacustres y tours gastronómicos).
 
 
 
-Registrable (Interfaz): Define el contrato para el registro.
+El núcleo funcional del proyecto radica en su capacidad para articular estos elementos en la creación y administración de reservas de servicios turísticos. La experiencia de usuario está diseñada bajo un entorno de interfaz gráfica intuitiva, organizada mediante pestañas dedicadas que facilitan la navegación y el control de cada área de la agencia.
 
 
 
-Persona (Superclase): Clase base para GuiaTuristico y ColaboradorExterno.
+🧱 Estructura y Jerarquía del Proyecto
+
+El sistema está organizado para garantizar un diseño modular, escalable y mantenible. A continuación se detalla la organización de los paquetes y sus componentes:
 
 
 
-RecursoAgencia (Superclase): Clase base para Vehiculo.
+data: Contiene los gestores encargados de la persistencia de datos (lectura/escritura en archivos) y la lógica de manipulación de colecciones.
 
 
 
-GuiaTuristico, ColaboradorExterno, Vehiculo (Subclases): Implementan la interfaz Registrable y sobrescriben métodos para comportamientos específicos.
+Clases: GestorArchivos, GestorPersonas, GestorRecursos, GestorReservas, GestorServicios.
 
 
 
-🧱 Estructura del proyecto
+model: Define el dominio del problema mediante una robusta jerarquía de clases que implementan polimorfismo.
 
 
 
-📁 src/
+Clases: Persona, Cliente, GuiaTuristico, ColaboradorExterno, RecursoAgencia, Vehiculo, Embarcacion, ServicioTuristico, Excursion, PaseoLacustre, TourGastronomico, ReservaTuristica e interfaz Registrable.
 
 
 
-├── data/        # Contiene la clase GestorEntidades, responsable de la lógica polimórfica y el almacenamiento en memoria de las colecciones.
+ui: Contiene la capa de presentación que interactúa con el usuario.
 
 
 
-├── model/       # Contiene la jerarquía de clases: Persona, GuiaTuristico, ColaboradorExterno, RecursoAgencia, Vehiculo y la interfaz Registrable.
+Clases: Main.
 
 
 
-└── ui/          # Contiene la clase Main, el punto de entrada principal que contiene el JFrame y la lógica de interacción con el usuario.
+util: Contiene clases de utilidad para el sistema.
+
+
+
+Clases: Validador.
+
+
+
+resources: Almacena los archivos de texto que actúan como base de datos persistente.
+
+
+
+Archivos: Personas.txt, Recursos.txt, Servicios.txt, Reservas.txt, Detalle\_Reservas.txt.
 
 
 
 ⚙️ Cómo ejecutar el proyecto
 
-
-
-Abre el proyecto utilizando Apache NetBeans.
-
-
-
-Localiza el paquete ui.
+Abre el proyecto en Apache NetBeans.
 
 
 
-Haz clic derecho sobre la clase Main.java y selecciona "Run File" para iniciar la interfaz gráfica.
+Navega hasta el paquete ui.
 
 
 
-Repositorio GitHub: https://github.com/egonzalezubilla/LlanquihueTourApp.git
+Haz clic derecho sobre la clase Main.java y selecciona "Run File" para desplegar la interfaz gráfica.
 
 
 
-Fecha de entrega: 13/07/2026
+🔗 Repositorio
+
+GitHub: https://github.com/egonzalezubilla/LlanquihueTourApp.git
+
+
+
+Fecha de entrega: 19/07/2026
 
 
 
